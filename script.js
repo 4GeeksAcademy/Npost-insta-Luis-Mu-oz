@@ -22,4 +22,26 @@ document.addEventListener('DOMContentLoaded', () => {
             });
         });
     }
+    const commentIcons = document.querySelectorAll('.fa-regular.fa-comment');
+    if (commentIcons.length > 0) {
+       
+        commentIcons.forEach(commentIcon => {
+          
+            commentIcon.addEventListener('click', () => {
+                
+                commentIcon.classList.toggle('fa-solid');
+            });
+        });
+    }
+    const planeIcons = document.querySelectorAll('.fa-regular.fa-paper-plane');
+    if (planeIcons.length > 0) {
+       
+        planeIcons.forEach(planeIcon => {
+          
+           planeIcon.addEventListener('click', () => {
+                
+                planeIcon.classList.toggle('fa-solid');
+            });
+        });
+    }
 });

@@ -68,4 +68,13 @@ body {
 }
 .fa-bookmark.fa-solid{
     color: color(srgb-linear 0.24228 0.61721 0.83077);
+    transition: color 0.2s ease-in-out;
+}
+.fa-comment.fa-solid{
+    color: black;
+    transition: color 0.2s ease-in-out;
+}
+.fa-regular.fa-paper-plane{
+    color: aquamarine;
+    transition: color 0.2s ease-in-out;
 }
