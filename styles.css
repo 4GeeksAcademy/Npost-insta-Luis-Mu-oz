@@ -1,28 +1,29 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: #222;
+    background-color: #fafafa;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    
     align-items: center;
-    min-height: 100vh;
-    padding: 20px;
+    
+    padding: 30px 0;
 }
 
 .post {
     background: white;
     width: 400px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
+    border: 1px solid #dbdbdb;
+    border-radius: 10px;
     overflow: hidden;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
 }
 
 .post-header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 10px;
+    padding: 12px;
 }
 
 .post-header i {
@@ -32,10 +33,12 @@ body {
 .post-header span {
     flex-grow: 1;
     margin-left: 10px;
+    font-size: 14px;
 }
 
 .options-icon {
     cursor: pointer;
+    color: #555;
 }
 
 .post-img img {
@@ -47,34 +50,43 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px;
+    padding: 12px;
+    font-size: 22px
 }
 
 .post-icons i {
-    margin-right: 10px;
+    margin-right: 15px;
     cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.post-icons i:hover {
+    transform: scale(1.2s);
 }
 
 .post-body {
-    padding: 0 10px 10px;
+    padding: 0 12px 12px;
+    font-size: 14px;
 }
 
 .post-body p {
     margin: 5px 0;
+    line-height: 1.4;
 }
+
 .fa-heart.fa-solid {
     color: red;
-    transition: color 0.2s ease-in-out;
+    
 }
 .fa-bookmark.fa-solid{
     color: color(srgb-linear 0.24228 0.61721 0.83077);
-    transition: color 0.2s ease-in-out;
+   
 }
 .fa-comment.fa-solid{
     color: black;
-    transition: color 0.2s ease-in-out;
+    
 }
-.fa-regular.fa-paper-plane{
+.fa-paper-plane.fa-solid {
     color: aquamarine;
-    transition: color 0.2s ease-in-out;
+    
 }
